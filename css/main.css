@@ -1,0 +1,41 @@
+body {
+	background: url(../imgs/bg.jpg) #cccccc no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	color: #000000;
+}
+
+table {
+	border: solid black 1px;
+	background: #cccc00;
+}
+
+th {
+	border: solid black 1px;
+	background: #cccc00;
+}
+
+td {
+	border: solid black 1px; width: 22px;text-align: center;
+	background: #cccc00;
+}
+
+#loadingbarProgress {
+	margin-top: 25%;
+}
+
+#Progress {
+	width: 100%;
+	background-color: #ddd;	
+}
+	
+#loadingbar {
+	width: 0%;
+	height: 30px;
+	background-color: #04AA6D;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+}

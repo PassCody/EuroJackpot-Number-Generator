@@ -7,9 +7,7 @@
 	let pathname = window.location.pathname;
 	let search = window.location.search;
 	let urlII = window.location.href;
-	let textII = search;
-	textII = textII.split("?");
-	textII = textII[1];
+	let textII = search.split("?")[1];
 	let newNumber = Number(textII);
 	if (urlII.includes("?")) {
 		timetorunII = 431000 * parseInt(newNumber);

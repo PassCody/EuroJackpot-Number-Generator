@@ -3,10 +3,11 @@
 		let randomNumber = Math.floor(Math.random() * 10);
 		return randomNumber;
 	}
+	let host = window.location.host;
+	let pathname = window.location.pathname;
+	let search = window.location.search;
 	let urlII = window.location.href;
-	let splittet_urlII = urlII.split("/");
-	let timetorunII;
-	let textII = splittet_urlII[6];
+	let textII = search;
 	textII = textII.split("?");
 	textII = textII[1];
 	let newNumber = Number(textII);
@@ -27,9 +28,7 @@
 		document.write('		<div id="loadingbar">0%</div>');
 		document.write('	</div>');
 		document.write('</center>');
-		let host = window.location.host;
-		let pathname = window.location.pathname;
-		let search = window.location.search;
+		
 		const newURL = "http://" + host + pathname + "frame.php" + search;
 		console.log(newURL);
 		document.write('<iframe src="' + newURL + '" id="resaultFrame" style="width: 100%;min-height: 933px;max-height: 100%;border: none; display: none;"></iframe>');
